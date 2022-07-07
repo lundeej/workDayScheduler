@@ -11,6 +11,7 @@ var currentDay = document.querySelector("#currentDay");
 currentDay.textContent = currentTime; 
 
 // timeEntry container Element 
+var containerEl; 
 var timeEntryContainer = document.querySelector(".container"); 
 
 // block for each hour of the day 
@@ -31,11 +32,20 @@ for(var i = 5; i <= 20; i++) {
     `; 
     //append the HTML to the page 
    var timeEntryDiv = document.getElementById("timeEntries"); 
-   timeEntryDiv.append(template); 
 }
 
 // save data using the container 
-timeEntryContainer.on("click", "button", function() {
+containerEl.on("click", "button", function() {
     console.log("yes"); 
+    
+    //Fetch the hour from the clicked button's (event.target) 'data-hour' attribute
+    
+    // use the hour to save for local storage 
+
+    // Getting the value/text user wants to save 
+
+    // from the clicked button, traverse the DOM to the nearby <textarea> to fetch its value 
+
+    // use the key to save to local area 
 
 }); 
